@@ -283,6 +283,8 @@ template {
     line-height: 140%;
     font-style: normal;
     font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .title {
