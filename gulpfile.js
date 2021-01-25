@@ -110,9 +110,9 @@ function css(cb) {
 }
 
 function cssWatch(cb) {
-    return src(path.src.scc, {base: srcPath + "assets/scss"})
+    return src(path.src.css, {base: srcPath + "assets/scss/"})
         .pipe(plumber({
-            errorHandler: function(err) {
+            errorHandler : function(err) {
                 notify.onError({
                     title: "SCSS Error",
                     message: "Error: <%= error.message %>"
@@ -121,7 +121,7 @@ function cssWatch(cb) {
             }
         }))
         .pipe(sass({
-            includePaths: '.node_modules/'
+            includePaths: './node_modules/'
         }))
         .pipe(rename({
             suffix: ".min",
@@ -210,13 +210,13 @@ function images(cb) {
     cb();
 }
 
-function fonts(cb) {
-    return src(path.src.fonts)
-        .pipe(dest(path.build.fonts))
-        .pipe(browserSync.reload({stream: true}));
+// function fonts(cb) {
+//     return src(path.src.fonts)
+//         .pipe(dest(path.build.fonts))
+//         .pipe(browserSync.reload({stream: true}));
 
-    cb();
-}
+//     cb();
+// }
 
 function clean(cb) {
     return del(path.clean);
@@ -229,10 +229,10 @@ function watchFiles() {
     gulp.watch([path.watch.css], cssWatch);
     gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.images], images);
-    gulp.watch([path.watch.fonts], fonts);
+    // gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 // Exports
@@ -241,7 +241,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
-exports.fonts = fonts;
+// exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;
