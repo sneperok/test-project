@@ -213,7 +213,7 @@ function images(cb) {
 function fonts(cb) {
     return src(path.src.fonts)
         .pipe(dest(path.build.fonts))
-        .pipe(browserSync.reload({strean: true}));
+        .pipe(browserSync.reload({stream: true}));
 
     cb();
 }
