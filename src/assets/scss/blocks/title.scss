@@ -1,0 +1,25 @@
+.title {
+    font-family: "Mabry Pro";
+    margin: 0;
+
+    &--first {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    &--second {
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    &--third {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 900;
+        font-style: normal;
+    }
+}

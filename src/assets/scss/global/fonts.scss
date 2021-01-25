@@ -1,14 +1,71 @@
 @font-face {
     font-family: "Mabry Pro";
-    src: 
-        url("../assets/fonts/MabryPro.otf") format("otf"),
-        url("../assets/fonts/MabryProBold.otf") format("otf"),
-        url("../assets/fonts/MabryProBlack.otf") format("otf"),
-        url("../assets/fonts/MabryProItalic.otf") format("otf"),
-        url("../assets/fonts/MabryProLight.otf") format("otf"),
-        url("../assets/fonts/MabryProMedium.otf") format("otf"),
-        url("../assets/fonts/MabryProBlackItalic.otf") format("otf"),
-        url("../assets/fonts/MabryProBoldItalic.otf") format("otf"),
-        url("../assets/fonts/MabryProLightItalic.otf") format("otf"),
-        url("../assets/fonts/MabryProMediumItalic.otf") format("otf");
+    src: url("../fonts/MabryProLight.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryPro.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProMedium.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProBold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProBlack.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProItalic.otf") format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProBoldItalic.otf") format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProLightItalic.otf") format("opentype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProMediumItalic.otf") format("opentype");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../fonts/MabryProBlackItalic.otf") format("opentype");
+    font-weight: 900;
+    font-style: italic;
 }

@@ -1,0 +1,34 @@
+.promo {
+    background-image: url("../images/site.png");
+    background-repeat: no-repeat;
+    background-position: 100% -70px;
+}
+
+.promo__wrapper {
+    padding: 315px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.promo__image {
+    text-align: right;
+}
+
+.promo__button {
+    align-self: flex-start;
+    background-color: $red;
+    color: $white;
+    box-shadow: 0 10px 30px $redshadow;
+}
+
+.promo__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.promo__item {
+    padding-right: 50px;
+}

@@ -1,0 +1,19 @@
+.services__wrapper {
+    padding: 0 16px;
+}
+
+.services__item-wrapper {
+    padding: 33px 24px 24px 24px;
+}
+
+.services__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services__item {
+    background-color: $greyblue;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}

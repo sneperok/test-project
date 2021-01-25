@@ -1,0 +1,13 @@
+.text {
+    font-family: "Mabry Pro";
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+
+    &--color {
+        color: $red;
+        text-decoration: none;
+    }
+}

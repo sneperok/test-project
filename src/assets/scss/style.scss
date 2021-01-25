@@ -1,6 +1,16 @@
 @import "global/fonts.scss";
 @import "global/variables.scss";
-@import "global/page.scss";
 
+@import "blocks/normalize.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/title.scss";
+@import "blocks/text.scss";
+@import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/promo.scss";
+@import "blocks/info.scss";
+@import "blocks/services.scss";
+@import "blocks/page.scss";
+@import "blocks/galery.scss";
+@import "blocks/page-footer.scss";

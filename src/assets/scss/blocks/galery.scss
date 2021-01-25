@@ -1,0 +1,21 @@
+.galery__wrapper {
+    padding-left: 16px;
+    overflow: hidden;
+}
+
+.galery__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 500%;
+    transition: transform 0.8s ease;
+}
+
+.galery__item {
+    width: 328px;
+    height: 328px;
+    overflow: hidden;
+    margin-right: 16px;
+    float: left;
+    border-radius: 16px;
+}
