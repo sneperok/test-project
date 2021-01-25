@@ -218,6 +218,11 @@ function images(cb) {
 //     cb();
 // }
 
+function fonts(cb) {
+    return gulp.src("src/assets/fonts/*.otf")
+        .pipe(gulp.dest("dist/assets/fonts/"))
+}
+
 function clean(cb) {
     return del(path.clean);
 
@@ -229,10 +234,10 @@ function watchFiles() {
     gulp.watch([path.watch.css], cssWatch);
     gulp.watch([path.watch.js], jsWatch);
     gulp.watch([path.watch.images], images);
-    // gulp.watch([path.watch.fonts], fonts);
+    gulp.watch([path.watch.fonts], fonts);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, js, images));
+const build = gulp.series(clean, gulp.parallel(html, css, js, images, fonts));
 const watch = gulp.parallel(build, watchFiles, serve);
 
 // Exports
@@ -241,7 +246,7 @@ exports.html = html;
 exports.css = css;
 exports.js = js;
 exports.images = images;
-// exports.fonts = fonts;
+exports.fonts = fonts;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;

@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Mabry Pro";
+    src: url("../assets/fonts/MabryPro.otf") format("otf"), url("../assets/fonts/MabryProBold.otf") format("otf"), url("../assets/fonts/MabryProBlack.otf") format("otf"), url("../assets/fonts/MabryProItalic.otf") format("otf"), url("../assets/fonts/MabryProLight.otf") format("otf"), url("../assets/fonts/MabryProMedium.otf") format("otf"), url("../assets/fonts/MabryProBlackItalic.otf") format("otf"), url("../assets/fonts/MabryProBoldItalic.otf") format("otf"), url("../assets/fonts/MabryProLightItalic.otf") format("otf"), url("../assets/fonts/MabryProMediumItalic.otf") format("otf");
+}
+
+.page {
+    height: 100%;
+    font-family: "Arial", sans-serif;
+}
+
+.page__body {
+    display: grid;
+    grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    min-width: 375px;
+    min-height: 100%;
+    margin: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.page-main {
+    font-family: "Mabry Pro";
+}
