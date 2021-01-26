@@ -1,9 +1,20 @@
 .info__wrapper {
     padding: 65px 16px 65px 16px;
+
+    @media (min-width: $normal) {
+        padding: 135px 64px 135px 64px; 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 155px;
+    }
 }
 
 .info__title {
     margin-bottom: 50px;
+
+    @media (min-width: $normal) {
+        margin-bottom: 90px;
+    }
 
     &--margin {
         margin-bottom: 22px;
@@ -13,8 +24,16 @@
 .info__text {
     margin-bottom: 34px;
 
+    @media (min-width: $normal) {
+        margin-bottom: 90px;
+    }
+
     &--margin {
         margin-bottom: 40px;
+
+        @media (min-width: $normal) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -22,12 +41,24 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $normal) {
+        margin-top: 147px;
+    }
 }
 
 .info__item {
     position: relative;
     padding-left: 20px;
     margin-bottom: 16px;
+
+    @media (min-width: $normal) {
+        margin-bottom: 40px;
+
+        &:nth-child(4) {
+            margin-bottom: 56px;
+        }
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -37,10 +68,16 @@
         content: "";
         position: absolute;
         left: 0;
-        top: 10px;
+        top: 12px;
         width: 3px;
         height: 3px;
         background-color: $white;
+
+        @media (min-width: $normal) {
+            width: 5px;
+            height: 5px;
+            top: 15px;
+        }
     }
 
     &:last-child {

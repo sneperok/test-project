@@ -2,20 +2,39 @@
     background-image: url("../images/site.png");
     background-repeat: no-repeat;
     background-position: 100% -15px;
+
+    @media (min-width: $normal) {
+        background-image: url("../images/site-normal.png")
+    }
 }
 
 .promo__wrapper {
     padding: 315px 16px 65px 16px;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $normal) {
+        padding: 117px 64px 135px 64px;
+    }
 }
 
 .promo__title {
     margin-bottom: 27px;
 }
 
+.promo__title br {
+    @media (max-width: $mobile-only) {
+        display: none;
+    }
+}
+
 .promo__text {
     margin-bottom: 41px;
+
+    @media (min-width: $normal) {
+        width: 463px;
+        margin-bottom: 71px;
+    }
 }
 
 .promo__image {
@@ -28,6 +47,10 @@
     color: $white;
     box-shadow: 0 10px 30px $redshadow;
     margin-bottom: 80px;
+
+    @media (min-width: $normal) {
+        margin-bottom: 286px;
+    }
 }
 
 .promo__list {
@@ -51,5 +74,27 @@
         height: 16px;
         background-color: $whiteopacity;
 
+        @media (min-width: $normal) {
+            height: 26px;
+            right: 34px;
+        }
+    }
+
+    @media (min-width: $normal) {
+        padding-right: 70px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            right: 34px;
+            top: 4px;
+            height: 26px;
+            background-color: $whiteopacity;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
     }
 }
