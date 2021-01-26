@@ -1,7 +1,16 @@
 .page-header {
     padding: 10px 0;
     background-color: $darkblue;
-    border-bottom: 1px solid $whiteopacity;
+    // border-bottom: 1px solid $whiteopacity;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 74px;
+        background-color: $whiteopacity;
+    }
 }
 
 .page-header__wrapper {

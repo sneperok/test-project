@@ -1,13 +1,21 @@
 .promo {
     background-image: url("../images/site.png");
     background-repeat: no-repeat;
-    background-position: 100% -70px;
+    background-position: 100% -15px;
 }
 
 .promo__wrapper {
-    padding: 315px 16px 0 16px;
+    padding: 315px 16px 65px 16px;
     display: flex;
     flex-direction: column;
+}
+
+.promo__title {
+    margin-bottom: 27px;
+}
+
+.promo__text {
+    margin-bottom: 41px;
 }
 
 .promo__image {
@@ -19,6 +27,7 @@
     background-color: $red;
     color: $white;
     box-shadow: 0 10px 30px $redshadow;
+    margin-bottom: 80px;
 }
 
 .promo__list {
@@ -31,4 +40,16 @@
 
 .promo__item {
     padding-right: 50px;
+    position: relative;
+
+    &:nth-child(2n+1)::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        right: 23px;
+        top: 4px;
+        height: 16px;
+        background-color: $whiteopacity;
+
+    }
 }

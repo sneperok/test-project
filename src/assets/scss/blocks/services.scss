@@ -1,9 +1,21 @@
 .services__wrapper {
-    padding: 0 16px;
+    padding: 65px 16px 65px 16px;
 }
 
 .services__item-wrapper {
     padding: 33px 24px 24px 24px;
+}
+
+.services__title {
+    margin-bottom: 60px;
+
+    &--margin {
+        margin-bottom: 22px;
+    }
+}
+
+.services__text {
+    margin-bottom: 43px;
 }
 
 .services__list {

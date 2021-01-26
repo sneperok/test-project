@@ -1,3 +1,32 @@
 .page-footer {
     background-color: $darkblue;
+    overflow: hidden;
+}
+
+.page-footer__title {
+    margin-bottom: 57px;
+}
+
+.page-footer__wrapper {
+    padding: 65px 16px 56px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer__map {
+    border-radius: 16px;
+    align-self: center;
+}
+
+.page-footer__reference {
+    background-color: $whiteopacity;
+    background-image: url("../images/reference.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    border-radius: 8px;
+    margin-bottom: 56px;
+}
+
+.page-footer__reference-text {
+    padding: 15px 23px;
 }

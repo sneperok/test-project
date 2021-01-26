@@ -1,5 +1,21 @@
 .info__wrapper {
-    padding: 0 16px;
+    padding: 65px 16px 65px 16px;
+}
+
+.info__title {
+    margin-bottom: 50px;
+
+    &--margin {
+        margin-bottom: 22px;
+    }
+}
+
+.info__text {
+    margin-bottom: 34px;
+
+    &--margin {
+        margin-bottom: 40px;
+    }
 }
 
 .info__list {
@@ -11,6 +27,11 @@
 .info__item {
     position: relative;
     padding-left: 20px;
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
 
     &::before {
         content: "";
