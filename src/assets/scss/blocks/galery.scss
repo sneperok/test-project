@@ -32,8 +32,8 @@
 }
 
 .galery__item {
-    width: 328px;
-    height: 328px;
+    min-width: 328px;
+    min-height: 328px;
     border-radius: 16px;
     overflow: hidden;
     position: relative;
