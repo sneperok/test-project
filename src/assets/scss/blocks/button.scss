@@ -12,6 +12,23 @@
     text-decoration: none;
     display: inline-block;
 
+    &:hover {
+        border: 1px solid $hoverred;
+        color: $hoverred;
+    }
+
+    &--color {
+        background-color: $red;
+        color: $white;
+        box-shadow: 0 10px 30px $redshadow;
+
+        &:hover {
+            background-color: $hoverred;
+            border: 1px solid $hoverred;
+            color: $white;
+        }
+    }
+
     @media (min-width: $normal) {
         padding: 15px 56px 18px 56px;
     }

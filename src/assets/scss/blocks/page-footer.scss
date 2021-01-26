@@ -11,6 +11,11 @@
     @media (min-width: $normal) {
         padding: 135px 64px 88px 64px;
     }
+
+    @media (min-width: $large) {
+        width: 1480px;
+        margin: 0 auto;
+    }
 }
 
 .page-footer__title {

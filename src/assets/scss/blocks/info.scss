@@ -2,10 +2,12 @@
     padding: 65px 16px 65px 16px;
 
     @media (min-width: $normal) {
-        padding: 135px 64px 135px 64px; 
+        padding: 30px 64px 135px 64px; 
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 155px;
+        width: 1230px;
+        margin: 0 auto;
     }
 }
 

@@ -4,6 +4,8 @@
 
     @media (min-width: $normal) {
         padding: 140px 64px 140px 64px;
+        width: 1230px;
+        margin: 0 auto;
     }
 }
 
@@ -34,6 +36,7 @@
     height: 328px;
     border-radius: 16px;
     overflow: hidden;
+    position: relative;
 
     @media (max-width: $mobile-only) {
         overflow: hidden;
@@ -44,6 +47,7 @@
     @media (min-width: $normal) {
         width: 272px;
         height: 272px;
+        position: relative;
     }
 
     &:first-child {
@@ -54,6 +58,48 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: 3;
+        }
+    }
+
+    &:nth-child(2) .galery__image {
+        width: 492px;
+        height: 328px;
+        position: absolute;
+        left: -60px;
+
+        @media (min-width: $normal) {
+            width: 408px;
+            height: 272px; 
+            position: absolute;
+            left: -60px;
+        }
+    }
+
+    &:nth-child(3) .galery__image {
+        width: 328px;
+        height: 492px;
+        position: absolute;
+        top: -70px;
+
+        @media (min-width: $normal) {
+            width: 272px;
+            height: 408px; 
+            position: absolute;
+            top: -70px;
+        }
+    }
+
+    &:last-child .galery__image {
+        width: 328px;
+        height: 492px;
+        position: absolute;
+        top: -70px;
+        
+        @media (min-width: $normal) {
+            width: 272px;
+            height: 408px;
+            position: absolute;
+            top: -70px;
         }
     }
 }

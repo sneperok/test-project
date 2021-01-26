@@ -4,7 +4,12 @@
     background-position: 100% -15px;
 
     @media (min-width: $normal) {
-        background-image: url("../images/site-normal.png")
+        background-image: url("../images/site-normal.png");
+    }
+
+    @media (min-width: $large) {
+        background-image: url("../images/site-large.png");
+        background-position: 100% -50px;
     }
 }
 
@@ -14,7 +19,9 @@
     flex-direction: column;
 
     @media (min-width: $normal) {
-        padding: 117px 64px 135px 64px;
+        padding: 117px 64px 250px 64px;
+        width: 1230px;
+        margin: 0 auto;
     }
 }
 
@@ -43,9 +50,6 @@
 
 .promo__button {
     align-self: flex-start;
-    background-color: $red;
-    color: $white;
-    box-shadow: 0 10px 30px $redshadow;
     margin-bottom: 80px;
 
     @media (min-width: $normal) {
