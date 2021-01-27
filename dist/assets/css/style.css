@@ -974,11 +974,18 @@ template {
 }
 
 .galery__item {
-    min-width: 328px;
-    min-height: 328px;
+    width: 328px;
+    height: 328px;
     border-radius: 16px;
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
+}
+
+@media (min-width: 1360px) {
+    .galery__item {
+        width: 272px;
+        height: 272px;
+    }
 }
 
 @media (max-width: 1359px) {
@@ -986,14 +993,6 @@ template {
         overflow: hidden;
         float: left;
         margin-right: 16px;
-    }
-}
-
-@media (min-width: 1360px) {
-    .galery__item {
-        width: 272px;
-        height: 272px;
-        position: relative;
     }
 }
 
