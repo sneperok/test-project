@@ -806,7 +806,7 @@ template {
 
 @media (min-width: 1360px) {
     .info__wrapper {
-        padding: 30px 64px 135px 64px;
+        padding: 90px 64px 135px 64px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 155px;
