@@ -1,27 +1,41 @@
 .promo {
-    background-image: url("../images/site.png");
+    background-image: url("../images/site-background.png");
     background-repeat: no-repeat;
-    background-position: 100% -15px;
+    background-position: 100% 5px;
+
+    @media (min-width: $normal-small) {
+        background-position: 100% 50px;
+    }
 
     @media (min-width: $normal) {
-        background-image: url("../images/site-normal.png");
+        background-image: url("../images/site-normal-background.png");
+        background-position: 100% 0px;
+
     }
 
     @media (min-width: $large) {
-        background-image: url("../images/site-large.png");
-        background-position: 100% -50px;
+        background-image: url("../images/site-large-background.png");
+        background-position: 100% -20px;
     }
 }
 
 .promo__wrapper {
-    padding: 315px 16px 65px 16px;
+    padding: 385px 16px 65px 16px;
     display: flex;
     flex-direction: column;
 
+    @media (min-width: $normal-small) {
+        padding: 150px 16px 65px 16px;
+    }
+
     @media (min-width: $normal) {
-        padding: 117px 64px 250px 64px;
+        padding: 234px 64px 370px 64px;
         width: 1230px;
         margin: 0 auto;
+    }
+
+    @media (min-width: $large) {
+        padding: 234px 64px 460px 64px;
     }
 }
 
@@ -30,7 +44,7 @@
 }
 
 .promo__title br {
-    @media (max-width: $mobile-only) {
+    @media (max-width: $mobile-only2) {
         display: none;
     }
 }
@@ -38,7 +52,7 @@
 .promo__text {
     margin-bottom: 41px;
 
-    @media (min-width: $normal) {
+    @media (min-width: $normal-small) {
         width: 463px;
         margin-bottom: 71px;
     }
@@ -81,6 +95,22 @@
         @media (min-width: $normal) {
             height: 26px;
             right: 34px;
+        }
+    }
+
+    @media (min-width: $mobile-small) {        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            right: 24px;
+            top: 4px;
+            height: 16px;
+            background-color: $whiteopacity;
+        }
+
+        &:last-child::after {
+            display: none;
         }
     }
 

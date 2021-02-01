@@ -1,6 +1,20 @@
 .page-footer {
-    background-color: $darkblue;
     overflow: hidden;
+    background: 
+        url("../images/footer-blue-top.png") no-repeat right 80%,
+        url("../images/footer-purple-down.png") no-repeat left 100%;
+
+        @media (min-width: $normal) {
+            background: 
+                url("../images/footer-blue-top-normal.png") no-repeat right 100%,
+                url("../images/footer-purple-down-normal.png") no-repeat left 100%;
+        }
+
+        @media (min-width: $large) {
+            background: 
+                url("../images/footer-blue-top-large.png") no-repeat right 100%,
+                url("../images/footer-purple-down-large.png") no-repeat left 100%;
+        }
 }
 
 .page-footer__wrapper {
@@ -10,6 +24,8 @@
 
     @media (min-width: $normal) {
         padding: 135px 64px 88px 64px;
+        max-width: 1480px;
+        margin: 0 auto;
     }
 
     @media (min-width: $large) {
@@ -26,6 +42,12 @@
     }
 }
 
+.page-footer__title br {
+    @media (min-width: $mobile-small) {
+        display: none;
+    }
+}
+
 .page-footer__container {
     display: flex;
     flex-direction: column;
@@ -38,12 +60,12 @@
 
 .page-footer__map {
     border-radius: 16px;
-    align-self: center;
+    min-width: 344px;
+    min-height: 344px;
 
     @media (min-width: $normal) {
-        width: 592px;
-        height: 560px;
-        align-self: stretch;
+        min-width: 592px;
+        min-height: 560px;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;

@@ -44,10 +44,24 @@
         line-height: 48px;
         font-weight: 300;
         font-style: normal;
+        margin-right: 12px;
 
         @media (min-width: $normal) {
             font-size: 64px;
             line-height: 64px;
+        }
+    }
+
+    &--align {
+        @media (max-width: $mobile-only) {
+            display: flex;
+            align-items: center;
+        }
+
+        @media (min-width: $normal) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }

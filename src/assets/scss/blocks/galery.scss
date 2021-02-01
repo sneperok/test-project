@@ -1,5 +1,23 @@
+.galery {
+    background: 
+        url("../images/galery-blue-top.png") no-repeat left -170px,
+        url("../images/galery-purple-down.png") no-repeat right 60px;
+
+        @media (min-width: $normal) {
+            background: 
+                url("../images/galery-blue-top-normal.png") no-repeat left -170px,
+                url("../images/galery-purple-down-normal.png") no-repeat right 60px;
+        }
+
+        @media (min-width: $large) {
+            background: 
+                url("../images/galery-blue-top-large.png") no-repeat left -170px,
+                url("../images/galery-purple-down-large.png") no-repeat right 60px;
+        }
+    }
+
 .galery__wrapper {
-    padding: 65px 0 65px 16px;
+    padding: 10px 0 225px 16px;
     overflow: hidden;
 
     @media (min-width: $normal) {

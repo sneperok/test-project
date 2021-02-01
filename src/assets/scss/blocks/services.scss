@@ -1,8 +1,29 @@
+.services {
+    background: 
+        url("../images/services-blue-top.png") no-repeat right -60px,
+        url("../images/services-purple-mid.png") no-repeat left 50%,
+        url("../images/services-purple-down.png") no-repeat right bottom;
+
+        @media (min-width: $normal) {
+            background: 
+                url("../images/services-blue-top-normal.png") no-repeat right -90px,
+                url("../images/services-purple-mid-normal.png") no-repeat left 50%,
+                url("../images/services-purple-down-normal.png") no-repeat right 700px;
+        }
+
+        @media (min-width: $large) {
+            background: 
+                url("../images/services-blue-top-large.png") no-repeat right -90px,
+                url("../images/services-purple-mid-large.png") no-repeat left 50%,
+                url("../images/services-purple-down-large.png") no-repeat right 700px;
+        }
+}
+
 .services__wrapper {
-    padding: 65px 16px 65px 16px;
+    padding: 65px 16px 155px 16px;
 
     @media (min-width: $normal) {
-        padding: 135px 64px 140px 64px;
+        padding: 135px 64px 290px 64px;
         width: 1230px;
         margin: 0 auto;
     }
@@ -10,6 +31,12 @@
 
 .services__item-wrapper {
     padding: 33px 24px 24px 24px;
+
+    @media (min-width: $normal-small) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     @media (min-width: $normal) {
         padding: 51px 48px 48px 48px;
@@ -34,7 +61,7 @@
 .services__text {
     margin-bottom: 43px;
 
-    @media (min-width: $normal) {
+    @media (min-width: $normal-small) {
         margin-bottom: 60px;
         flex-grow: 3;
     }
@@ -45,7 +72,7 @@
     padding: 0;
     list-style: none;
 
-    @media (min-width: $normal) {
+    @media (min-width: $normal-small) {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-gap: 48px;
@@ -57,15 +84,16 @@
     background-color: $greyblue;
     border-radius: 16px;
     margin-bottom: 20px;
+    min-width: 343px;
 
-    @media (min-width: $normal) {
+    @media (min-width: $normal-small) {
         margin-bottom: 0;
         display: flex;
     }
 }
 
 .services__button {
-    @media (min-width: $normal) {
+    @media (min-width: $normal-small) {
         align-self: flex-start;
     }
 }
