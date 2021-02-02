@@ -37,8 +37,8 @@
     list-style: none;
 
     @media (max-width: $mobile-only) {
-        width: 500%;
-        transition: transform 0.8s ease;
+        width: 400%;
+        overflow: auto;
     }
     
     @media (min-width: $normal) {
@@ -62,7 +62,6 @@
     }
 
     @media (max-width: $mobile-only) {
-        overflow: hidden;
         float: left;
         margin-right: 16px;
     }

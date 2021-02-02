@@ -787,8 +787,8 @@ template {
   list-style: none; }
   @media (max-width: 1359px) {
     .galery__list {
-      width: 500%;
-      transition: transform 0.8s ease; } }
+      width: 400%;
+      overflow: auto; } }
   @media (min-width: 1360px) {
     .galery__list {
       display: grid;
@@ -808,7 +808,6 @@ template {
       height: 272px; } }
   @media (max-width: 1359px) {
     .galery__item {
-      overflow: hidden;
       float: left;
       margin-right: 16px; } }
   @media (min-width: 1360px) {
